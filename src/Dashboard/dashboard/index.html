@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+</head>
+<body ng-app="dashboard" ng-controller="DeviceController" style="text-align: center;">
+    <div ng-cloak>
+        <div ng-show="doorAlert" style="display: inline-block;">
+            <img src="./images/door%20open.png" width="150px" height="150px" alt="Porte ouverte"/>
+        </div>
+        <div ng-show="!doorAlert" style="display: inline-block;">
+            <img src="./images/door%20closed.png" width="150px" height="150px" alt="Porte fermée"/>
+        </div>
+
+        <dash-level data-min-level="0" data-max-level="100" data-model="getLastTemperature()" data-label="Température"></dash-level>
+
+        <div ng-show="switchAlert" style="display: inline-block;">
+            <img src="./images/On.png" width="120px" height="67px" alt="Interrupteur activé"/>
+        </div>
+        <div ng-show="!switchAlert" style="display: inline-block;">
+            <img src="./images/Off.png" width="120px" height="67px" alt="Interrupteur désactivé"/>
+        </div>
+    </div>
+
+    <div ng-repeat="deviceRecord in deviceRecordModel track by deviceRecord.deviceId" style="display: inline-block;">
+        <dash-chart data-model="deviceRecord" data-max-item="50" data-width="800" data-height="300" class="line-chart"></dash-chart>
+    </div>
+
+    <script type="text/javascript" src="scripts/thirdParty/angular-1.3.11.min.js"></script>
+    <script type="text/javascript" src="./scripts/thirdParty/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="./scripts/thirdParty/jquery.signalR-2.1.2.min.js"></script>
+    <script type="text/javascript" src="./scripts/thirdParty/signalr-hub-1.3.0.min.js"></script>
+    <script type="text/javascript" src="/signalr/hubs"></script>
+    <script type="text/javascript" src="./scripts/thirdParty/d3-3.3.13.min.js"></script>
+
+    <script type="text/javascript"
+            src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1','packages':['corechart']}]}"></script>
+
+    <script type="text/javascript" src="./scripts/app/app.js"></script>
+    <script type="text/javascript" src="./scripts/app/misc/levelComponent.js"></script>
+    <script type="text/javascript" src="./scripts/app/controllers/controllerModule.js"></script>
+    <script type="text/javascript" src="./scripts/app/controllers/deviceController.js"></script>
+    <script type="text/javascript" src="./scripts/app/directives/directiveModule.js"></script>
+    <script type="text/javascript" src="scripts/app/directives/dashChart.js"></script>
+    <script type="text/javascript" src="scripts/app/directives/dashLevel.js"></script>
+
+</body>
+</html>

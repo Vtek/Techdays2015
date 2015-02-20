@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dashboard", "dashboard\dashboard.csproj", "{92E04362-5A20-40DF-AD51-8E2FCF06D50D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DashboardTest", "DashboardTest\DashboardTest.csproj", "{EFC97C4C-3C0B-4F24-AB1A-1551A8CD95FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboard.Entity", "Dashboard.Entity\Dashboard.Entity.csproj", "{2AF9F920-C2BD-488C-B6A9-9E44948D36C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerBI.Api.Client", "PowerBI.Api.Client\PowerBI.Api.Client.csproj", "{610BEFEA-2235-4A0F-AB83-1EA9BFF8CAFD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{19F1D66F-2D5E-4385-AE65-34C9174DD8D3}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerBI.CleanTable", "PowerBI.CleanTable\PowerBI.CleanTable.csproj", "{BA925E7D-A6ED-4239-A337-2F0877F5DBD2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92E04362-5A20-40DF-AD51-8E2FCF06D50D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92E04362-5A20-40DF-AD51-8E2FCF06D50D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92E04362-5A20-40DF-AD51-8E2FCF06D50D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92E04362-5A20-40DF-AD51-8E2FCF06D50D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFC97C4C-3C0B-4F24-AB1A-1551A8CD95FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFC97C4C-3C0B-4F24-AB1A-1551A8CD95FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFC97C4C-3C0B-4F24-AB1A-1551A8CD95FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFC97C4C-3C0B-4F24-AB1A-1551A8CD95FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AF9F920-C2BD-488C-B6A9-9E44948D36C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AF9F920-C2BD-488C-B6A9-9E44948D36C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AF9F920-C2BD-488C-B6A9-9E44948D36C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AF9F920-C2BD-488C-B6A9-9E44948D36C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{610BEFEA-2235-4A0F-AB83-1EA9BFF8CAFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{610BEFEA-2235-4A0F-AB83-1EA9BFF8CAFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{610BEFEA-2235-4A0F-AB83-1EA9BFF8CAFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{610BEFEA-2235-4A0F-AB83-1EA9BFF8CAFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA925E7D-A6ED-4239-A337-2F0877F5DBD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA925E7D-A6ED-4239-A337-2F0877F5DBD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA925E7D-A6ED-4239-A337-2F0877F5DBD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA925E7D-A6ED-4239-A337-2F0877F5DBD2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
