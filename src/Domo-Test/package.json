@@ -1,0 +1,20 @@
+{
+  "name": "Domo",
+  "version": "0.0.0",
+  "description": "Techdays2015",
+  "main": "app.js",
+  "dependencies": {
+    "event-hub-client": "^1.0.1",
+    "serialport": "^1.4.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Domo",
+    "Techdays2015"
+  ],
+  "author": "Anthony",
+  "license": "ISC"
+}
